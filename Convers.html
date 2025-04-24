@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Convert, Search & Replace String in JavaScript</h1>
+    <p id="search_result"></p>
+    <p id="replace_result"></p>
+    <p id="string_result"></p>
+
+    <script>
+        var str = "Hello my name is Nirjal, how are you doing?";
+        var search_position = str.search("Nirjal");
+        var txt = str.replace("Hello", "hi dear!")
+        document.getElementById("search_result").innerHTML = search_position;
+        document.getElementById("replace_result").innerHTML = txt;
+
+        var x = 20;;
+        var y = 9;
+        document.getElementById("string_result").innerHTML = String(x) + String(y);
+    </script>
+</body>
+</html>
